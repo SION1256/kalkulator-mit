@@ -1,0 +1,1636 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="procedures_defnoreturn" id="5)xpy*Iz3K/..~:E{/(q" x="310" y="-381">
+    <mutation>
+      <arg name="num"></arg>
+    </mutation>
+    <field name="NAME">calcnum</field>
+    <field name="VAR0">num</field>
+    <statement name="STACK">
+      <block type="controls_if" id="?78G;nqutE^pjJVVpR|/">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_operation" id="Z0LwuIp);um[yq11aFdR">
+            <mutation items="2"></mutation>
+            <field name="OP">AND</field>
+            <value name="A">
+              <block type="logic_compare" id="]kq~wm]Lb:K2q-bi)#rE">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="component_set_get" id="_tu_fT3!L|Cga](gp26h">
+                    <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Display"></mutation>
+                    <field name="COMPONENT_SELECTOR">Display</field>
+                    <field name="PROP">Text</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="jR9!gji!Dz,[HnL2VEs@">
+                    <field name="TEXT">0</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_compare" id="W^y{ZmSW:N|e;A7#U=45">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="text_starts_at" id="d1u9dpz1ZM3hKfmxIh88">
+                    <value name="TEXT">
+                      <block type="component_set_get" id="]ea29nSy,,jJ.S^z(jFn">
+                        <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Display"></mutation>
+                        <field name="COMPONENT_SELECTOR">Display</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                    <value name="PIECE">
+                      <block type="text" id="w(gPExinSPJ#U+m/XG@R">
+                        <field name="TEXT">.</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="-,)=wBn:V{at,Mp(bQi!">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="mTfI*x$7l7tRjJw+c=n}">
+            <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Display"></mutation>
+            <field name="COMPONENT_SELECTOR">Display</field>
+            <field name="PROP">Text</field>
+            <value name="VALUE">
+              <block type="lexical_variable_get" id=":bL}J:.E_6;60B`Pv!f9">
+                <field name="VAR">num</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="controls_if" id="!EbA3`dVp2dHxsoyIpjz">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+              <block type="logic_compare" id="qX|qVo5)LtaCAleW5t]z">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="lexical_variable_get" id="Y]MUph,ywHU:w@Ahg^,2">
+                    <field name="VAR">global last_mark</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="(iZhW8`!Na0,+G}W,BL=">
+                    <field name="TEXT">=</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="procedures_callnoreturn" id="e$X;N[1btfuE`Qc`5Rps" inline="false">
+                <mutation name="reset"></mutation>
+                <field name="PROCNAME">reset</field>
+                <next>
+                  <block type="component_set_get" id=")ot.*6u6FMdDgG6X7U{]">
+                    <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Display"></mutation>
+                    <field name="COMPONENT_SELECTOR">Display</field>
+                    <field name="PROP">Text</field>
+                    <value name="VALUE">
+                      <block type="lexical_variable_get" id="NlVdOx$(3;4fJhg)3Y3O">
+                        <field name="VAR">num</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block type="component_set_get" id="o6bPNfiz2xX1[FITGVno">
+                <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Display"></mutation>
+                <field name="COMPONENT_SELECTOR">Display</field>
+                <field name="PROP">Text</field>
+                <value name="VALUE">
+                  <block type="text_join" id="n(W5kmxmt.s3[FrXGr.5">
+                    <mutation items="2"></mutation>
+                    <value name="ADD0">
+                      <block type="component_set_get" id="sVt+U9d}s4(C6fO;^vK4">
+                        <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Display"></mutation>
+                        <field name="COMPONENT_SELECTOR">Display</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="lexical_variable_get" id="T7f$A#}g[9ED*ke`,JwQ">
+                        <field name="VAR">num</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </statement>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="qn/C@PCpFcC0rb*X*)eb" x="-1452" y="-271">
+    <mutation component_type="Button" is_generic="false" instance_name="btn_7" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">btn_7</field>
+    <statement name="DO">
+      <block type="procedures_callnoreturn" id="cTXnWw*tG$57oySIvEee" inline="false">
+        <mutation name="calcnum">
+          <arg name="num"></arg>
+        </mutation>
+        <field name="PROCNAME">calcnum</field>
+        <value name="ARG0">
+          <block type="math_number" id="gAf)Oom-?Y?kKew/]MDs">
+            <field name="NUM">7</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="rr1-arWy*/LGnS3`zUjY" x="-1066" y="-280">
+    <mutation component_type="Button" is_generic="false" instance_name="btn_8" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">btn_8</field>
+    <statement name="DO">
+      <block type="procedures_callnoreturn" id="8Qs)h4Y!_NQc-5o,)k,z" inline="false">
+        <mutation name="calcnum">
+          <arg name="num"></arg>
+        </mutation>
+        <field name="PROCNAME">calcnum</field>
+        <value name="ARG0">
+          <block type="math_number" id="Oi^NMF(}TgUOc;YP_{G_">
+            <field name="NUM">8</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="global_declaration" id="axa4lB%SiN-Fn4c0-`4r" x="1460" y="-407">
+    <field name="NAME">loopround</field>
+    <value name="VALUE">
+      <block type="math_number" id="[7um;.##F^2jz-06%@,o">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="]#/Gj!a=V^e{LR9Q~=2D" x="-795" y="-283">
+    <mutation component_type="Button" is_generic="false" instance_name="btn_9" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">btn_9</field>
+    <statement name="DO">
+      <block type="procedures_callnoreturn" id="LsUCW{s`)h`DlwL74t@=" inline="false">
+        <mutation name="calcnum">
+          <arg name="num"></arg>
+        </mutation>
+        <field name="PROCNAME">calcnum</field>
+        <value name="ARG0">
+          <block type="math_number" id="~WKexOT|Yb;zZWx`jMTH">
+            <field name="NUM">9</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="/*UF/_piu=k9:^^`;Va3" x="-562" y="-287">
+    <mutation component_type="Button" is_generic="false" instance_name="Clear" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Clear</field>
+    <statement name="DO">
+      <block type="procedures_callnoreturn" id="TQ;lb+Kk+tZSosdx=-#k" inline="false">
+        <mutation name="reset"></mutation>
+        <field name="PROCNAME">reset</field>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="@jad)X@FLGHK$ql9LX7D" x="-199" y="-285">
+    <mutation component_type="Button" is_generic="false" instance_name="delete" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">delete</field>
+    <statement name="DO">
+      <block type="controls_if" id="gxftGlWC2ETs)TppLqZK">
+        <value name="IF0">
+          <block type="logic_compare" id="5{Y!TOHvl#7Q(ryi4_71">
+            <field name="OP">NEQ</field>
+            <value name="A">
+              <block type="component_set_get" id="=9#+hD_cS[RV5_R`oS/Z">
+                <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Display"></mutation>
+                <field name="COMPONENT_SELECTOR">Display</field>
+                <field name="PROP">Text</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="i[A$JRyL=P^buD4}Bg)~">
+                <field name="TEXT">0</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="procedures_callnoreturn" id="*ew{jay.h_#R+PrmVxHA" inline="false">
+            <mutation name="del_last">
+              <arg name="text"></arg>
+            </mutation>
+            <field name="PROCNAME">del_last</field>
+            <value name="ARG0">
+              <block type="component_set_get" id="+em{:B$x7wF%H?M/oT9}">
+                <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Display"></mutation>
+                <field name="COMPONENT_SELECTOR">Display</field>
+                <field name="PROP">Text</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="2=ruj[DOFDUq+mw0Z%A(">
+                <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Display"></mutation>
+                <field name="COMPONENT_SELECTOR">Display</field>
+                <field name="PROP">Text</field>
+                <value name="VALUE">
+                  <block type="lexical_variable_get" id="Q24^W`|mlzuifutKUj^M">
+                    <field name="VAR">global ressplitnum</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="lexical_variable_set" id="_kn#AtLz$qzGgEd:6Nnv">
+                    <field name="VAR">global ressplitnum</field>
+                    <value name="VALUE">
+                      <block type="text" id=":$agHlZ.c$Rmj_l{OoBr">
+                        <field name="TEXT"></field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="global_declaration" id="yWv?JBVwofFF~oL0}g,N" x="1460" y="-368">
+    <field name="NAME">splitnum</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="!s?`|wXya/nS?Ge:Tbf9">
+        <mutation items="0"></mutation>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="Zv9XAPb_Q^pI6X7Yj]+e" x="1857" y="-366">
+    <field name="NAME">currentresult</field>
+    <value name="VALUE">
+      <block type="math_number" id="{s9:zQ3k{QfR}`GjHEt;">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="zs*fE,OxezHCthKvda;2" x="1460" y="-325">
+    <field name="NAME">ressplitnum</field>
+    <value name="VALUE">
+      <block type="text" id="s_K19UfF0Srg*G}hXL*e">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="S!C8Fu-QXwHoqN8aAfB(" x="-1456" y="-161">
+    <mutation component_type="Button" is_generic="false" instance_name="btn_4" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">btn_4</field>
+    <statement name="DO">
+      <block type="procedures_callnoreturn" id="41e_O^r!SGc@Ww2=!|On" inline="false">
+        <mutation name="calcnum">
+          <arg name="num"></arg>
+        </mutation>
+        <field name="PROCNAME">calcnum</field>
+        <value name="ARG0">
+          <block type="math_number" id="?|GdT=NQx?#@YfAJspkr">
+            <field name="NUM">4</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="global_declaration" id=".mmVf9s`bcYYF7T^{Uj-" x="1784" y="-325">
+    <field name="NAME">last_mark</field>
+    <value name="VALUE">
+      <block type="text" id="B}y1R=B0JcFFHgN04jvs">
+        <field name="TEXT">AntiSplitErr</field>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="mUdSy8v|i@BYxVhdlD5," x="-1064" y="-169">
+    <mutation component_type="Button" is_generic="false" instance_name="btn_5" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">btn_5</field>
+    <statement name="DO">
+      <block type="procedures_callnoreturn" id="6~F3RsD(ZEl{sm*Em*t*" inline="false">
+        <mutation name="calcnum">
+          <arg name="num"></arg>
+        </mutation>
+        <field name="PROCNAME">calcnum</field>
+        <value name="ARG0">
+          <block type="math_number" id="@7{L]$iL1!i)ohf%CB:A">
+            <field name="NUM">5</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="+a;JW6x_(M7v3Uxz1!2B" x="933" y="-271">
+    <mutation>
+      <arg name="mark"></arg>
+    </mutation>
+    <field name="NAME">update_calc</field>
+    <field name="VAR0">mark</field>
+    <statement name="STACK">
+      <block type="controls_if" id="pN=S$,ZHZ^eMYVVWQXzH">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id="jTBmUDub$:o`];1$~Cu7">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="lexical_variable_get" id="%]Yiv$NcdO{XsSFmG9dO">
+                <field name="VAR">global last_mark</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="{u6Q}@QT/7VmYt=,s=9-">
+                <field name="TEXT">=</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="m5DcaAkXfdm=BH?sreC:">
+            <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Calculation"></mutation>
+            <field name="COMPONENT_SELECTOR">Calculation</field>
+            <field name="PROP">Text</field>
+            <value name="VALUE">
+              <block type="text_join" id="yATZZ8y`xoS6jk7c}KF:">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="lexical_variable_get" id="WmBv.@/45S?j8;Hzhx5H">
+                    <field name="VAR">global currentresult</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="lexical_variable_get" id="nBJ=e3+8N6w4*K!me+.0">
+                    <field name="VAR">mark</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="lexical_variable_set" id=",jh*%O9}D*r)v4Zzy2T0">
+                <field name="VAR">global last_mark</field>
+                <value name="VALUE">
+                  <block type="lexical_variable_get" id="cUA~Yc`)*Jw*i~P$Mv/O">
+                    <field name="VAR">mark</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="}q2S*8@~)j7lyY;~6zoW">
+                    <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Display"></mutation>
+                    <field name="COMPONENT_SELECTOR">Display</field>
+                    <field name="PROP">Text</field>
+                    <value name="VALUE">
+                      <block type="text" id="`0n5Xem.G:r7FaKqQq3$">
+                        <field name="TEXT">0</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="controls_if" id="|nUqjK+4[2bzl.Dtj3+W">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+              <block type="logic_operation" id="4Z=$aDD=9_HY?L}dHPTj">
+                <mutation items="2"></mutation>
+                <field name="OP">AND</field>
+                <value name="A">
+                  <block type="logic_compare" id="9{.5EKHiRVsT.gVPJFei">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="component_set_get" id="NEnSik9/{Bo4Deo:J(K8">
+                        <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Display"></mutation>
+                        <field name="COMPONENT_SELECTOR">Display</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id="!Y`V|q{.F0C3bXlO@g8=">
+                        <field name="TEXT">0</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="lexical_variable_get" id="Ac:y]gU_*[_c2Xn}|!.,">
+                    <field name="VAR">global zero_fix</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="procedures_callnoreturn" id="DHPFR2j!eo54-vc_|1aC" inline="false">
+                <mutation name="del_last">
+                  <arg name="text"></arg>
+                </mutation>
+                <field name="PROCNAME">del_last</field>
+                <value name="ARG0">
+                  <block type="component_set_get" id="1!N?NNipmX@8t[eZY1bR">
+                    <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Calculation"></mutation>
+                    <field name="COMPONENT_SELECTOR">Calculation</field>
+                    <field name="PROP">Text</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="DYe^ml+wNI7]ha97!$w^">
+                    <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Calculation"></mutation>
+                    <field name="COMPONENT_SELECTOR">Calculation</field>
+                    <field name="PROP">Text</field>
+                    <value name="VALUE">
+                      <block type="text_join" id="+ure_HyM[;HJ~?Ya]sD9">
+                        <mutation items="2"></mutation>
+                        <value name="ADD0">
+                          <block type="lexical_variable_get" id="k2evlXWbU/pe0U.R{lgl">
+                            <field name="VAR">global ressplitnum</field>
+                          </block>
+                        </value>
+                        <value name="ADD1">
+                          <block type="lexical_variable_get" id="Gdc}514mEZyho-42ZHz|">
+                            <field name="VAR">mark</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block type="component_set_get" id="IcXx#CE_`*xsN=x#Z($N">
+                <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Calculation"></mutation>
+                <field name="COMPONENT_SELECTOR">Calculation</field>
+                <field name="PROP">Text</field>
+                <value name="VALUE">
+                  <block type="text_join" id="P^m_kFeK?~%/X5N__Vxh">
+                    <mutation items="3"></mutation>
+                    <value name="ADD0">
+                      <block type="component_set_get" id="`Z6O}arOzgoll-VT,zY4">
+                        <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Calculation"></mutation>
+                        <field name="COMPONENT_SELECTOR">Calculation</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="component_set_get" id="FIs1}d6V8r6rPXqydWPP">
+                        <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Display"></mutation>
+                        <field name="COMPONENT_SELECTOR">Display</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                    <value name="ADD2">
+                      <block type="lexical_variable_get" id=":afiF%{-4XYg895j0Ez0">
+                        <field name="VAR">mark</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="NN!OGK)F7w5[lPO[/y|=">
+                    <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Display"></mutation>
+                    <field name="COMPONENT_SELECTOR">Display</field>
+                    <field name="PROP">Text</field>
+                    <value name="VALUE">
+                      <block type="text" id="F}RoTye0n@7/`HYSOQkX">
+                        <field name="TEXT">0</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="procedures_callnoreturn" id="[,@(]h3jol1dOrX2DPSO" inline="false">
+                        <mutation name="calc_fuction"></mutation>
+                        <field name="PROCNAME">calc_fuction</field>
+                        <next>
+                          <block type="lexical_variable_set" id="wAS3_e)xh]vM2F;1jf3P">
+                            <field name="VAR">global last_mark</field>
+                            <value name="VALUE">
+                              <block type="lexical_variable_get" id="6B*r[YEX2Z;|?9E9|8ET">
+                                <field name="VAR">mark</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="lexical_variable_set" id="+t+o3zPUi{~x3t:U3y4G">
+                <field name="VAR">global ressplitnum</field>
+                <value name="VALUE">
+                  <block type="text" id="ye4xb[_[XWL,n*q8c]Ku">
+                    <field name="TEXT"></field>
+                  </block>
+                </value>
+                <next>
+                  <block type="lexical_variable_set" id="Z%j}Bu;^:.PQB-`08.YY">
+                    <field name="VAR">global zero_fix</field>
+                    <value name="VALUE">
+                      <block type="logic_false" id="+cmj#aIx?)@(:;a|xTB/">
+                        <field name="BOOL">TRUE</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="wf^Z1lx2{fnQY[fcy,W`" x="-799" y="-168">
+    <mutation component_type="Button" is_generic="false" instance_name="btn_6" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">btn_6</field>
+    <statement name="DO">
+      <block type="procedures_callnoreturn" id="`^]9]4Ec#sxU4Ao_!{M9" inline="false">
+        <mutation name="calcnum">
+          <arg name="num"></arg>
+        </mutation>
+        <field name="PROCNAME">calcnum</field>
+        <value name="ARG0">
+          <block type="math_number" id="%@^+s*w@6KW7g?u?A~|;">
+            <field name="NUM">6</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="global_declaration" id="+%Ok!Hhd}qL5/L-X^]AU" x="1462" y="-283">
+    <field name="NAME">zero_fix</field>
+    <value name="VALUE">
+      <block type="logic_false" id="j:%hg-swVJzV$G1r{_d#">
+        <field name="BOOL">TRUE</field>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="dmqA(-A,t{~n?m},9_Hq" x="-570" y="-168">
+    <mutation component_type="Button" is_generic="false" instance_name="plus" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">plus</field>
+    <statement name="DO">
+      <block type="procedures_callnoreturn" id="Tji.79*9oE#P[_Z1fE3}" inline="false">
+        <mutation name="update_calc">
+          <arg name="mark"></arg>
+        </mutation>
+        <field name="PROCNAME">update_calc</field>
+        <value name="ARG0">
+          <block type="text" id=",Jc^J2eFxyLJJKgBg%^;">
+            <field name="TEXT">+</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="global_declaration" id="5?qVi:v=K*TLk2i_v,FE" x="1785" y="-281">
+    <field name="NAME">last_num</field>
+    <value name="VALUE">
+      <block type="math_number" id="Gpm2Im/xk)w@of,1tV#p">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+  </block>
+  <block type="procedures_defnoreturn" id="zcw|pY=CcJ4)bvoax.un" x="1690" y="-244">
+    <mutation>
+      <arg name="num"></arg>
+    </mutation>
+    <field name="NAME">replace_marks</field>
+    <field name="VAR0">num</field>
+    <statement name="STACK">
+      <block type="lexical_variable_set" id="mt{YNrr6/c,]W)bC|rH`">
+        <field name="VAR">num</field>
+        <value name="VALUE">
+          <block type="text_replace_all" id="u_RDvT|qfgz#g)+ko5oL">
+            <value name="TEXT">
+              <block type="lexical_variable_get" id="0@=*m]o-V8}cXE,H}2@_">
+                <field name="VAR">num</field>
+              </block>
+            </value>
+            <value name="SEGMENT">
+              <block type="text" id="D?gez1G5Q^qK@?844E:~">
+                <field name="TEXT">+</field>
+              </block>
+            </value>
+            <value name="REPLACEMENT">
+              <block type="text" id="Ad`aGTr8Rxy8KlP0xPn#">
+                <field name="TEXT">|</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="lexical_variable_set" id="V;sD?a[IC@;t+:3z}#UM">
+            <field name="VAR">num</field>
+            <value name="VALUE">
+              <block type="text_replace_all" id="*tpeq8n3=Yz8},#$0jm`">
+                <value name="TEXT">
+                  <block type="lexical_variable_get" id="JxdM6aAu8P$AJ[ud2Oti">
+                    <field name="VAR">num</field>
+                  </block>
+                </value>
+                <value name="SEGMENT">
+                  <block type="text" id="la2qk*$5b[qpU9/eUVP/">
+                    <field name="TEXT">-</field>
+                  </block>
+                </value>
+                <value name="REPLACEMENT">
+                  <block type="text" id="d}gS]V9cB;D3=Ez0W1UL">
+                    <field name="TEXT">|</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="lexical_variable_set" id="F!DB(k$ZJSo^i}O3E:==">
+                <field name="VAR">num</field>
+                <value name="VALUE">
+                  <block type="text_replace_all" id="+Uv-4tVJ?[Smeq[(1B*?">
+                    <value name="TEXT">
+                      <block type="lexical_variable_get" id="hGIV20A~uPXo(=62tP+i">
+                        <field name="VAR">num</field>
+                      </block>
+                    </value>
+                    <value name="SEGMENT">
+                      <block type="text" id="D.2X|q_;(r#Gz$w=YGKT">
+                        <field name="TEXT">*</field>
+                      </block>
+                    </value>
+                    <value name="REPLACEMENT">
+                      <block type="text" id="(+b9@)h)*a`T3#2Qn_9!">
+                        <field name="TEXT">|</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="lexical_variable_set" id="+2|onofG@cK):z,v4z3c">
+                    <field name="VAR">num</field>
+                    <value name="VALUE">
+                      <block type="text_replace_all" id="OX36[Z1%%[BW,S)X=Sw;">
+                        <value name="TEXT">
+                          <block type="lexical_variable_get" id="0JqH]?OJ-yx!e]sD_p*p">
+                            <field name="VAR">num</field>
+                          </block>
+                        </value>
+                        <value name="SEGMENT">
+                          <block type="text" id="g5nUx9*S4^#e+z}Av`CJ">
+                            <field name="TEXT">÷</field>
+                          </block>
+                        </value>
+                        <value name="REPLACEMENT">
+                          <block type="text" id="]UZQo:Ja/vxlf_97z(2h">
+                            <field name="TEXT">|</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="local_declaration_statement" id="*Pov`Ck695jQ$44gN`;`">
+                        <mutation>
+                          <localname name="last_num_list"></localname>
+                        </mutation>
+                        <field name="VAR0">last_num_list</field>
+                        <value name="DECL0">
+                          <block type="lists_create_with" id="8HUh$)buK%?%xFyD.jiz">
+                            <mutation items="0"></mutation>
+                          </block>
+                        </value>
+                        <statement name="STACK">
+                          <block type="lexical_variable_set" id="zv`IJf|ENo]_rkpH`TNa">
+                            <field name="VAR">last_num_list</field>
+                            <value name="VALUE">
+                              <block type="text_split" id="HGk3ZXNMUH$!9$4Aw5jO">
+                                <mutation mode="SPLIT"></mutation>
+                                <field name="OP">SPLIT</field>
+                                <value name="TEXT">
+                                  <block type="lexical_variable_get" id="$xqMm7w.z$Fi0zdX[3)@">
+                                    <field name="VAR">num</field>
+                                  </block>
+                                </value>
+                                <value name="AT">
+                                  <block type="text" id="d+fQGfd-AqCFc|mtxT;:">
+                                    <field name="TEXT">|</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="lexical_variable_set" id="u]m8xWR(fBz@,G]t3W?|">
+                                <field name="VAR">global last_num</field>
+                                <value name="VALUE">
+                                  <block type="lists_select_item" id="a:1=3{WhG4.4w{nOQd}j">
+                                    <value name="LIST">
+                                      <block type="lexical_variable_get" id="jyvh5Fa$5C*C*Ha0~L,U">
+                                        <field name="VAR">last_num_list</field>
+                                      </block>
+                                    </value>
+                                    <value name="NUM">
+                                      <block type="controls_choose" id="z7b#CEBFGGPIsyL#6O?Y">
+                                        <value name="TEST">
+                                          <block type="math_compare" id="RiXrNQQ367)OJRSN#MK4">
+                                            <field name="OP">EQ</field>
+                                            <value name="A">
+                                              <block type="math_division" id="Pkg~d{6$C|zcK(f=w1$.">
+                                                <value name="A">
+                                                  <block type="lists_length" id="fNDZ)-%-%zZMB_N9IkbJ">
+                                                    <value name="LIST">
+                                                      <block type="lexical_variable_get" id="%zKy@cdlifr-4HT(@jez">
+                                                        <field name="VAR">last_num_list</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <block type="math_number" id="(nLzY#%uY$LM@)?DJ@!}">
+                                                    <field name="NUM">2</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="math_number" id="%WiP~H9,}bFFt?Vc9HUH">
+                                                <field name="NUM">0</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="THENRETURN">
+                                          <block type="math_subtract" id="+l4)GVxjdYe{beq:ZH#I">
+                                            <value name="A">
+                                              <block type="lists_length" id="%*Hk^sN8r[*^N~c2o$_^">
+                                                <value name="LIST">
+                                                  <block type="lexical_variable_get" id="?lW?nS5g/o*CAoj{R`U_">
+                                                    <field name="VAR">last_num_list</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="math_number" id="$lB|,^fV%=A/Ucp/u[YG">
+                                                <field name="NUM">1</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="ELSERETURN">
+                                          <block type="lists_length" id="dK8?#e{X]jo9otEK|RLJ">
+                                            <value name="LIST">
+                                              <block type="lexical_variable_get" id="JKHM7Ioq6pz_bp]FR/!%">
+                                                <field name="VAR">last_num_list</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="6ToeTH8;-5Ar0^2KqpBm" x="-1457" y="-45">
+    <mutation component_type="Button" is_generic="false" instance_name="btn_1" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">btn_1</field>
+    <statement name="DO">
+      <block type="procedures_callnoreturn" id="f:z5Tu2WlNX%)5gu,u]Z" inline="false">
+        <mutation name="calcnum">
+          <arg name="num"></arg>
+        </mutation>
+        <field name="PROCNAME">calcnum</field>
+        <value name="ARG0">
+          <block type="math_number" id="56~r_rvjU13~}ByDlcd%">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="wId%^5+;-6A(E?33J[Hb" x="-1062" y="-51">
+    <mutation component_type="Button" is_generic="false" instance_name="btn_2" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">btn_2</field>
+    <statement name="DO">
+      <block type="procedures_callnoreturn" id=",E]g:;DO)[=X~jV]0om!" inline="false">
+        <mutation name="calcnum">
+          <arg name="num"></arg>
+        </mutation>
+        <field name="PROCNAME">calcnum</field>
+        <value name="ARG0">
+          <block type="math_number" id="5~3XY^]$rcB4r?ncs!3A">
+            <field name="NUM">2</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="}OAXpEt[r(wpXjufG4a-" x="-200" y="-85">
+    <mutation component_type="Button" is_generic="false" instance_name="multiply" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">multiply</field>
+    <statement name="DO">
+      <block type="procedures_callnoreturn" id="[;%aKtW.#3QWfh50=yd#" inline="false">
+        <mutation name="update_calc">
+          <arg name="mark"></arg>
+        </mutation>
+        <field name="PROCNAME">update_calc</field>
+        <value name="ARG0">
+          <block type="text" id=":8be_yui:_KDrM1=x}#S">
+            <field name="TEXT">*</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="hV*TrvvMfNr7ELD7R5sW" x="-797" y="-52">
+    <mutation component_type="Button" is_generic="false" instance_name="btn_3" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">btn_3</field>
+    <statement name="DO">
+      <block type="procedures_callnoreturn" id="=CIz{5%tt;3`x|S2xLdb" inline="false">
+        <mutation name="calcnum">
+          <arg name="num"></arg>
+        </mutation>
+        <field name="PROCNAME">calcnum</field>
+        <value name="ARG0">
+          <block type="math_number" id="QL*M3KfI0}#Se[d=H7==">
+            <field name="NUM">3</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="ZhZ,I|Wa%3%W$33fK}Jp" x="-573" y="-57">
+    <mutation component_type="Button" is_generic="false" instance_name="minus" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">minus</field>
+    <statement name="DO">
+      <block type="procedures_callnoreturn" id="d#:U*u-u/XRkNu^u#$v." inline="false">
+        <mutation name="update_calc">
+          <arg name="mark"></arg>
+        </mutation>
+        <field name="PROCNAME">update_calc</field>
+        <value name="ARG0">
+          <block type="text" id="^0q4#9A3Xpc`J8XerW9b">
+            <field name="TEXT">-</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="jw$@n;pp2=W~F-`kvl)t" x="-1458" y="71">
+    <mutation component_type="Button" is_generic="false" instance_name="btn_00" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">btn_00</field>
+    <statement name="DO">
+      <block type="controls_if" id="njF~T:6dN#9[nC=%OL3=">
+        <value name="IF0">
+          <block type="logic_compare" id="HYwmE83Kg1+_LM*4;PR2">
+            <field name="OP">NEQ</field>
+            <value name="A">
+              <block type="component_set_get" id="}lmF/HrTx-Xaf+uch;HW">
+                <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Display"></mutation>
+                <field name="COMPONENT_SELECTOR">Display</field>
+                <field name="PROP">Text</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="}HR2i!FD3-~PCGMYCY~^">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="procedures_callnoreturn" id="}3BUsjs=U{:{Tv.zAu$S" inline="false">
+            <mutation name="calcnum">
+              <arg name="num"></arg>
+            </mutation>
+            <field name="PROCNAME">calcnum</field>
+            <value name="ARG0">
+              <block type="text" id="/:%%-v|Lm5FD$w:~H[tL">
+                <field name="TEXT">00</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="]RM[}nNm|P!$e+-^0]l5" x="-200" y="21">
+    <mutation component_type="Button" is_generic="false" instance_name="divide" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">divide</field>
+    <statement name="DO">
+      <block type="procedures_callnoreturn" id="?he3:-uBlu`_Ht3;_-3s" inline="false">
+        <mutation name="update_calc">
+          <arg name="mark"></arg>
+        </mutation>
+        <field name="PROCNAME">update_calc</field>
+        <value name="ARG0">
+          <block type="text" id="1/OC{2ox_JK+GWk)M)2k">
+            <field name="TEXT">÷</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="po8YEh%oDG_85d9R+?;I" x="-1066" y="71">
+    <mutation component_type="Button" is_generic="false" instance_name="btn_0" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">btn_0</field>
+    <statement name="DO">
+      <block type="lexical_variable_set" id="o7^EI5O45*Zau2?0[d2v">
+        <field name="VAR">global zero_fix</field>
+        <value name="VALUE">
+          <block type="logic_boolean" id="`^^bcj(12p5T/}!dS%7m">
+            <field name="BOOL">FALSE</field>
+          </block>
+        </value>
+        <next>
+          <block type="procedures_callnoreturn" id="0#Q{q:`mwMtn|4^z_U0t" inline="false">
+            <mutation name="calcnum">
+              <arg name="num"></arg>
+            </mutation>
+            <field name="PROCNAME">calcnum</field>
+            <value name="ARG0">
+              <block type="text" id="{G46YD)_19!Yt}(XJTMq">
+                <field name="TEXT">0</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="ylwOHn[v7m)6;*K]xkv|" x="138" y="23">
+    <mutation component_type="Button" is_generic="false" instance_name="percent" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">percent</field>
+    <statement name="DO">
+      <block type="component_set_get" id="0V%JKckGq`j=`BBr8`C+">
+        <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Calculation"></mutation>
+        <field name="COMPONENT_SELECTOR">Calculation</field>
+        <field name="PROP">Text</field>
+        <value name="VALUE">
+          <block type="text_join" id="Dvk6ck-Ll?gk_b=8467B">
+            <mutation items="2"></mutation>
+            <value name="ADD0">
+              <block type="component_set_get" id=",Grx-MJ7QBqT=o1/|y}+">
+                <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Calculation"></mutation>
+                <field name="COMPONENT_SELECTOR">Calculation</field>
+                <field name="PROP">Text</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="math_division" id="Zr~;_YY96H2fzgpRrmcR">
+                <value name="A">
+                  <block type="lexical_variable_get" id="ed:vxmLIxX^LSThq,cXe">
+                    <field name="VAR">global currentresult</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="component_set_get" id="@[0-nDrt]4cbv,%qN*h7">
+                    <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Display"></mutation>
+                    <field name="COMPONENT_SELECTOR">Display</field>
+                    <field name="PROP">Text</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="Z|X]KEdVO7#yg#rwW.K9">
+            <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Display"></mutation>
+            <field name="COMPONENT_SELECTOR">Display</field>
+            <field name="PROP">Text</field>
+            <value name="VALUE">
+              <block type="text" id="^s~z,yfDqGt9W6m0k`?c">
+                <field name="TEXT">0</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="rf.AMMUTOuE2hUSgkL+]" x="-838" y="185">
+    <mutation component_type="Button" is_generic="false" instance_name="btn_dot" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">btn_dot</field>
+    <statement name="DO">
+      <block type="controls_if" id="{f!f3;PLbn%d0p{)Qh^0">
+        <mutation elseif="1"></mutation>
+        <value name="IF0">
+          <block type="logic_operation" id=")h]`n{hr(2.7P:PI*ge/">
+            <mutation items="2"></mutation>
+            <field name="OP">AND</field>
+            <value name="A">
+              <block type="logic_compare" id="Y,u.IBUfcaRq_6qW$y!0">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="lexical_variable_get" id="B,zF?L3GKk1Ck+S4?|Qe">
+                    <field name="VAR">global zero_fix</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_negate" id="?#Z}|u1N_(B)%SerspNA">
+                    <value name="BOOL">
+                      <block type="logic_boolean" id="JyKq;M@01W*kW`3@T?Sy">
+                        <field name="BOOL">TRUE</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_compare" id="G7lge_:@kSu)W+L,f98]">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="text_starts_at" id="]/qbr_#mxE}x?N$^w6NS">
+                    <value name="TEXT">
+                      <block type="component_set_get" id="FS1yFHb3cp]2Z~zU-I2~">
+                        <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Display"></mutation>
+                        <field name="COMPONENT_SELECTOR">Display</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                    <value name="PIECE">
+                      <block type="text" id="os[b8+wDlV8-o/B.[`yI">
+                        <field name="TEXT">.</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="vrN`Wd@e?SK@l#.x#iZ,">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="_hSf]!?Kisq)4q$ovs.H">
+            <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Display"></mutation>
+            <field name="COMPONENT_SELECTOR">Display</field>
+            <field name="PROP">Text</field>
+            <value name="VALUE">
+              <block type="text_join" id="RRs8Cnrhbw:(o8h,qIl}">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="component_set_get" id=",%eu%TwpK=G{}S9O|D52">
+                    <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Display"></mutation>
+                    <field name="COMPONENT_SELECTOR">Display</field>
+                    <field name="PROP">Text</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id="xx/8R1c#`.f4QNx{Kk-t">
+                    <field name="TEXT">.</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <value name="IF1">
+          <block type="logic_or" id="1Mp)m3Q17,9frqaU3dd_">
+            <mutation items="2"></mutation>
+            <field name="OP">AND</field>
+            <value name="A">
+              <block type="logic_compare" id="96sNADg6%Ck~oounhclG">
+                <field name="OP">NEQ</field>
+                <value name="A">
+                  <block type="component_set_get" id="aUD_,K8|OK,c{q)1/CG@">
+                    <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Display"></mutation>
+                    <field name="COMPONENT_SELECTOR">Display</field>
+                    <field name="PROP">Text</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="J26Jfr=FO:t2X],@d#EM">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_compare" id="QOYaWe_bAHv6-/eRF+7^">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="text_starts_at" id="BhjBdxFG.UExNKMCL}fi">
+                    <value name="TEXT">
+                      <block type="component_set_get" id="P.$s}K$d$l%M)D:8q@o~">
+                        <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Display"></mutation>
+                        <field name="COMPONENT_SELECTOR">Display</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                    <value name="PIECE">
+                      <block type="text" id="Q*ZD+B$1C#]aT}#F3%%(">
+                        <field name="TEXT">.</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="F,d1wFyEd}nRN!vKXY:q">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO1">
+          <block type="procedures_callnoreturn" id="u2T?|w8xt^kQMV),CSXa" inline="false">
+            <mutation name="calcnum">
+              <arg name="num"></arg>
+            </mutation>
+            <field name="PROCNAME">calcnum</field>
+            <value name="ARG0">
+              <block type="text" id="0=rTI9qfr^Q}|7OhtQbo">
+                <field name="TEXT">.</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="$)o//h`q{bi]O2j?^;m;" x="177" y="170">
+    <mutation>
+      <arg name="text"></arg>
+    </mutation>
+    <field name="NAME">del_last</field>
+    <field name="VAR0">text</field>
+    <statement name="STACK">
+      <block type="lexical_variable_set" id="#=y_ub}I/7y`$P)]d^#C">
+        <field name="VAR">global splitnum</field>
+        <value name="VALUE">
+          <block type="text_split" id="~~!H/[aaKx*^j^24Ag(=">
+            <mutation mode="SPLIT"></mutation>
+            <field name="OP">SPLIT</field>
+            <value name="TEXT">
+              <block type="lexical_variable_get" id="eJe0pLQfLD+V_,hJ8O=G">
+                <field name="VAR">text</field>
+              </block>
+            </value>
+            <value name="AT">
+              <block type="text" id="!5rl9i7/*!eN6-bk=VFv">
+                <field name="TEXT"></field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="controls_forEach" id="%T,:L.Z5rmMAoqJYA;I*">
+            <field name="VAR">item</field>
+            <value name="LIST">
+              <block type="lexical_variable_get" id="j@T)YvRRia{KMO!O%`2$">
+                <field name="VAR">global splitnum</field>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="lexical_variable_set" id="s;[H)z_scPXrgG!}=3ak">
+                <field name="VAR">global loopround</field>
+                <value name="VALUE">
+                  <block type="math_add" id="sC+xNcXp3Rf08f[{jP=u">
+                    <mutation items="2"></mutation>
+                    <value name="NUM0">
+                      <block type="lexical_variable_get" id="x,KiY_57ejqt*3%vW-r-">
+                        <field name="VAR">global loopround</field>
+                      </block>
+                    </value>
+                    <value name="NUM1">
+                      <block type="math_number" id="DPt:Jk6ktz%(7X/AaER]">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="controls_if" id="v,jQRYwpmlp;F.wNuTPK">
+                    <value name="IF0">
+                      <block type="math_compare" id="6ssXXW0VzmlkDWHOGpl`">
+                        <field name="OP">LT</field>
+                        <value name="A">
+                          <block type="lexical_variable_get" id="g3x5G/h9zjMzN6dw=O/;">
+                            <field name="VAR">global loopround</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="lists_length" id="6:1Qb0/_SpVbG]|8|Eid">
+                            <value name="LIST">
+                              <block type="lexical_variable_get" id="XF5/=SI(M~t^DDd#8lqY">
+                                <field name="VAR">global splitnum</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="lexical_variable_set" id="2LiqNeiy%DjHng0)0yI:">
+                        <field name="VAR">global ressplitnum</field>
+                        <value name="VALUE">
+                          <block type="text_join" id=",FhBNCS4H:erw~s5.n6o">
+                            <mutation items="2"></mutation>
+                            <value name="ADD0">
+                              <block type="lexical_variable_get" id="F?p8YcmG9U4ABYmgsTNU">
+                                <field name="VAR">global ressplitnum</field>
+                              </block>
+                            </value>
+                            <value name="ADD1">
+                              <block type="lexical_variable_get" id="b?_a9oj|WhR5,w77DRsq">
+                                <field name="VAR">item</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="lexical_variable_set" id="R%3+(8$RFOZGKSw{cMG(">
+                <field name="VAR">global splitnum</field>
+                <value name="VALUE">
+                  <block type="lists_create_with" id="(=gy/~3/ltRJHai5L+C1">
+                    <mutation items="0"></mutation>
+                  </block>
+                </value>
+                <next>
+                  <block type="lexical_variable_set" id="5pX5^|,BU@|+00-*pUka">
+                    <field name="VAR">global loopround</field>
+                    <value name="VALUE">
+                      <block type="math_number" id="XBPfQ]Z8H5nvr*:*,T{^">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="q?j%2E/{X6*d~_~ajuF." x="-1448" y="267">
+    <mutation component_type="Button" is_generic="false" instance_name="equal" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">equal</field>
+    <statement name="DO">
+      <block type="component_set_get" id="Z8A2iiuv+K{e^PoQ^{Z~">
+        <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Calculation"></mutation>
+        <field name="COMPONENT_SELECTOR">Calculation</field>
+        <field name="PROP">Text</field>
+        <value name="VALUE">
+          <block type="text_join" id="HeTCVx.J9!A|yQe%-_-F">
+            <mutation items="2"></mutation>
+            <value name="ADD0">
+              <block type="component_set_get" id="@%d8d*C!*?;tB#J%kWLU">
+                <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Calculation"></mutation>
+                <field name="COMPONENT_SELECTOR">Calculation</field>
+                <field name="PROP">Text</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="component_set_get" id="9J03/pmg^eTg_;W(J.%;">
+                <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Display"></mutation>
+                <field name="COMPONENT_SELECTOR">Display</field>
+                <field name="PROP">Text</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="procedures_callnoreturn" id="Aue*eOmG.k`@+qt^0$8}" inline="false">
+            <mutation name="calc_fuction"></mutation>
+            <field name="PROCNAME">calc_fuction</field>
+            <next>
+              <block type="component_set_get" id="hyrC?*QMK9V2k4Du#ZiL">
+                <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Calculation"></mutation>
+                <field name="COMPONENT_SELECTOR">Calculation</field>
+                <field name="PROP">Text</field>
+                <value name="VALUE">
+                  <block type="text_join" id="UYXTqu4CuF9n::8S5$;%">
+                    <mutation items="2"></mutation>
+                    <value name="ADD0">
+                      <block type="component_set_get" id="h37NBNG=?J1}Pya})wX=">
+                        <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Calculation"></mutation>
+                        <field name="COMPONENT_SELECTOR">Calculation</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="text" id="OQ%S5ZJnlYH[-BDuFBCt">
+                        <field name="TEXT">=</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="lexical_variable_set" id="HRm]8WBH1e=G/1-2dQP(">
+                    <field name="VAR">global last_mark</field>
+                    <value name="VALUE">
+                      <block type="text" id="Nt)%V}Dqqz8I@RjtlrfQ">
+                        <field name="TEXT">=</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_set_get" id="$52s#X?oIL4LryPM6uxL">
+                        <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Display"></mutation>
+                        <field name="COMPONENT_SELECTOR">Display</field>
+                        <field name="PROP">Text</field>
+                        <value name="VALUE">
+                          <block type="lexical_variable_get" id=")v/Muc;?+W,;p8fy8n8)">
+                            <field name="VAR">global currentresult</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_callnoreturn" id="@)x`rF.^(2CVB_+0eWaU" inline="false" x="1465" y="290">
+    <mutation name="calc_fuction"></mutation>
+    <field name="PROCNAME">calc_fuction</field>
+  </block>
+  <block type="procedures_defnoreturn" id="?Gt=M2|2tl*(W?z|_^Yc" x="933" y="351">
+    <field name="NAME">calc_fuction</field>
+    <statement name="STACK">
+      <block type="procedures_callnoreturn" id="2~cqk=9Akid~27:mvmeX" inline="false">
+        <mutation name="replace_marks">
+          <arg name="num"></arg>
+        </mutation>
+        <field name="PROCNAME">replace_marks</field>
+        <value name="ARG0">
+          <block type="component_set_get" id="oOMqSJA@1tF_oIYL836J">
+            <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Calculation"></mutation>
+            <field name="COMPONENT_SELECTOR">Calculation</field>
+            <field name="PROP">Text</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if" id="L0/!,B_c:zCeuGcRuh#4">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+              <block type="logic_compare" id="J[_`3$Q$Aby6,U2/uP.L">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="lexical_variable_get" id="--]}5Pu=do;?v{5^#EJ/">
+                    <field name="VAR">global last_mark</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="|#-L;3UG7QFMV{5H;l:Z">
+                    <field name="TEXT">AntiSplitErr</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="lexical_variable_set" id="?M;Cl+3Ho8!Vef_)ZNOY">
+                <field name="VAR">global currentresult</field>
+                <value name="VALUE">
+                  <block type="lexical_variable_get" id="tq`ptJRK7P_Coif^5pJG">
+                    <field name="VAR">global last_num</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block type="controls_if" id="D+Xt`?8LrXRk+1~Vsr~3">
+                <mutation elseif="3"></mutation>
+                <value name="IF0">
+                  <block type="logic_compare" id="0OAzMt^xd]ZOZU}G[b[|">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="lexical_variable_get" id="/V4JH,DjxU1^13JHFq}e">
+                        <field name="VAR">global last_mark</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id="cF,G~/;1u^9O1]u=5qO9">
+                        <field name="TEXT">+</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="lexical_variable_set" id="}PhO3pCtvY~.~vv9Iil:">
+                    <field name="VAR">global currentresult</field>
+                    <value name="VALUE">
+                      <block type="math_add" id="P74I?E?D4mI;a22BtC86">
+                        <mutation items="2"></mutation>
+                        <value name="NUM0">
+                          <block type="lexical_variable_get" id="nN86rC:r=4__WBt-LNC7">
+                            <field name="VAR">global currentresult</field>
+                          </block>
+                        </value>
+                        <value name="NUM1">
+                          <block type="lexical_variable_get" id="@+ig7=M~fI1v4VxD1RUa">
+                            <field name="VAR">global last_num</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <value name="IF1">
+                  <block type="logic_compare" id="/:;hYM-]c2[+j83t`fYy">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="lexical_variable_get" id="WF=LfNQ,5r)8/!mKHdH8">
+                        <field name="VAR">global last_mark</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id="}VJ9%@,x%{4pbt3M`0P3">
+                        <field name="TEXT">-</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO1">
+                  <block type="lexical_variable_set" id="Ksze^).@w?ZACg7zO3go">
+                    <field name="VAR">global currentresult</field>
+                    <value name="VALUE">
+                      <block type="math_subtract" id="G0y(S]d}?cs+E2[rs0Bw">
+                        <value name="A">
+                          <block type="lexical_variable_get" id="L$6U@*gr$)Yitq1s``5L">
+                            <field name="VAR">global currentresult</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="lexical_variable_get" id="!?]*fn^2E+fr,LB)i5gL">
+                            <field name="VAR">global last_num</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <value name="IF2">
+                  <block type="logic_compare" id="Rq59O-$v[6t#i,Hga.,-">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="lexical_variable_get" id="^`{PGZ_FmsuUGPz([(x2">
+                        <field name="VAR">global last_mark</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id="|l,0)%HF=-L@nrMk$McH">
+                        <field name="TEXT">*</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO2">
+                  <block type="lexical_variable_set" id="IeOj|?I,0nZ?-9^Q9iSZ">
+                    <field name="VAR">global currentresult</field>
+                    <value name="VALUE">
+                      <block type="math_multiply" id="}xcyu%A@(rhWrWbL1:9(">
+                        <mutation items="2"></mutation>
+                        <value name="NUM0">
+                          <block type="lexical_variable_get" id="-Pm;qb;uIRwe{zcjPxt4">
+                            <field name="VAR">global currentresult</field>
+                          </block>
+                        </value>
+                        <value name="NUM1">
+                          <block type="lexical_variable_get" id=".^m~o{,Sq~TcnB]`Sc*K">
+                            <field name="VAR">global last_num</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <value name="IF3">
+                  <block type="logic_compare" id="l_JrPk-+(vmzD81PZ~4?">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="lexical_variable_get" id="Q{T3if*9j0fLQMrrulY~">
+                        <field name="VAR">global last_mark</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id="2CrF?2CStg:H+D!OIWT!">
+                        <field name="TEXT">÷</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO3">
+                  <block type="lexical_variable_set" id="X:f(csV0A0VEs#jVtND1">
+                    <field name="VAR">global currentresult</field>
+                    <value name="VALUE">
+                      <block type="math_division" id="$`^q]Sm_~ppF$G`2ENLm">
+                        <value name="A">
+                          <block type="lexical_variable_get" id="h{GE+;AyN1Mhz:rDvXB@">
+                            <field name="VAR">global currentresult</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="lexical_variable_get" id="tbQCdfK.+Y4z4M]Ruv[g">
+                            <field name="VAR">global last_num</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="(Lu42Z]6O-m9[DT]VK=2" x="177" y="540">
+    <field name="NAME">reset</field>
+    <statement name="STACK">
+      <block type="component_set_get" id="vBLl)r3Ip1MHN;)FD=BH">
+        <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Calculation"></mutation>
+        <field name="COMPONENT_SELECTOR">Calculation</field>
+        <field name="PROP">Text</field>
+        <value name="VALUE">
+          <block type="text" id="InwuB,6/t)$1ed}Fo|uy">
+            <field name="TEXT"></field>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="_Q_tG~loQtM0L=YsTrXG">
+            <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Display"></mutation>
+            <field name="COMPONENT_SELECTOR">Display</field>
+            <field name="PROP">Text</field>
+            <value name="VALUE">
+              <block type="text" id="s6QA2,S.YlDbNfoid%iR">
+                <field name="TEXT">0</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="^mQ`/z0^$%-N_q5m4hdS">
+                <mutation component_type="Label" set_or_get="set" property_name="FontSize" is_generic="false" instance_name="Display"></mutation>
+                <field name="COMPONENT_SELECTOR">Display</field>
+                <field name="PROP">FontSize</field>
+                <value name="VALUE">
+                  <block type="math_number" id="bO^d|jiqQNI-G-+BVK`;">
+                    <field name="NUM">70</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="lexical_variable_set" id="!L)#brC(oa(n$~l|XeiQ">
+                    <field name="VAR">global currentresult</field>
+                    <value name="VALUE">
+                      <block type="math_number" id="4c4.}M1.1_]ffWvgNAi0">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="lexical_variable_set" id="?{FI00{5G{%erYt3Vgc)">
+                        <field name="VAR">global last_mark</field>
+                        <value name="VALUE">
+                          <block type="text" id="9{7vmBj|D-X+PBF=!nI)">
+                            <field name="TEXT">AntiSplitErr</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="207" language-version="32"></yacodeblocks>
+</xml>
